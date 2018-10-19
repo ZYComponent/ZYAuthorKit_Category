@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DC5095C0F12B396636CD64A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1DC5095C0F12B396636CD64A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		45A788CDA8A1FC7151851148 /* Pods_ZYAuthorKit_Category_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAuthorKit_Category_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562600D20E477D7BBD02742D /* Pods-ZYAuthorKit_Category_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAuthorKit_Category_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYAuthorKit_Category_Example/Pods-ZYAuthorKit_Category_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZYAuthorKit_Category_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAuthorKit_Category_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,10 +63,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E9871B1F762208B5EEDE25 /* Pods-ZYAuthorKit_Category_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAuthorKit_Category_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYAuthorKit_Category_Example/Pods-ZYAuthorKit_Category_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9F38C16F08374D063D87D6B7 /* Pods-ZYAuthorKit_Category_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAuthorKit_Category_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZYAuthorKit_Category_Tests/Pods-ZYAuthorKit_Category_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B9F16971FA3EEBB07663855A /* ZYAuthorKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZYAuthorKit_Category.podspec; path = ../ZYAuthorKit_Category.podspec; sourceTree = "<group>"; };
+		B9F16971FA3EEBB07663855A /* ZYAuthorKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYAuthorKit_Category.podspec; path = ../ZYAuthorKit_Category.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C8741B04DEE17DEA6B116106 /* Pods_ZYAuthorKit_Category_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYAuthorKit_Category_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D508A7896738CB016C80554C /* Pods-ZYAuthorKit_Category_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYAuthorKit_Category_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYAuthorKit_Category_Tests/Pods-ZYAuthorKit_Category_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E578266D627E319B436D97FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E578266D627E319B436D97FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				9F38C16F08374D063D87D6B7 /* Pods-ZYAuthorKit_Category_Tests.debug.xcconfig */,
 				D508A7896738CB016C80554C /* Pods-ZYAuthorKit_Category_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -304,13 +303,25 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZYAuthorKit_Category_Example/Pods-ZYAuthorKit_Category_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYAPIsKit/ZYAPIsKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZYAuthorKit_Category/ZYAuthorKit_Category.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYToolsKit/ZYToolsKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYAPIsKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYAuthorKit_Category.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYToolsKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
